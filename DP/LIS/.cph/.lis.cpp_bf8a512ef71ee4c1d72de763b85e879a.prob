@@ -1,0 +1,1 @@
+{"name":"Local: lis","url":"/workspaces/Competitive-Programming/DP/LIS/lis.cpp","tests":[{"id":1669100305915,"input":"7\n5 0 9 2 7 3 4","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/Competitive-Programming/DP/LIS/lis.cpp","group":"local","local":true}

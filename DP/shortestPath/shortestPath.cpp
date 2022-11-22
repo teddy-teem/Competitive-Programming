@@ -35,5 +35,4 @@ int main()
     }
     int a = solve(0);
     cout<<a;
-    // cerr<<c<<" it\n";
 }

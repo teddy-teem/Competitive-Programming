@@ -13,7 +13,7 @@
 #define BIT_NO_OF_1(a) (__builtin_popcount(a)) //Number of one's in Binary
 #define BIT_NO_OF_LEADING_0(a) (__builtin_clz(a))
 #define BIT_NO_OF_TRAILING_0(a) (__builtin_ctz(a))
-
+#define INF 10000000
 using namespace std; 
 
 typedef long long ll;
@@ -25,33 +25,30 @@ typedef pair<int,string> pis;
 typedef pair<string,string> pss;
 typedef pair<string,int> psi;
 typedef map<int,int> mii;
-
-string s1, s2;
-vector<vi> mem(100, vi(100, -1));
-
-int LCS (int i=0, int j=0) {
-    if(i==s1.size() || j==s2.size()) return 0;
-    if(mem[i][j] != -1) return mem[i][j];
-    int ans=0;
-    if(s1[i]==s2[j]) {
-        ans = 1 + LCS(i+1, j+1);
-    } else {
-        int v1 = LCS(i, j+1);
-        int v2 = LCS(i+1, j);
-        ans = max(v1, v2);
-    }
-    mem[i][j]=ans;
-    return mem[i][j];
+vi v;
+// vi 
+int ans=0;
+int solve(int i, int w) {
+  if(i>v.size()) return INF;
+  if(w<0) return INF;
+  if (w == 0)
+  {
+    return 0;
+  };
+  ans = min(solve(i + 1, w), 1 + solve(i + 1, w - v[i]));
+  return ans;
 }
- 
+
 int main() {
   IOS;
-  cin>>s1>>s2;
-  int a = LCS(0, 0);
-  int s1_size = s1.size();
-  int s2_size = s2.size();
-  int ans = max(s1_size, s2_size) - min(s1_size, s2_size);
-  ans = ans+(max(s1_size, s2_size)-a);
+  int n, W;
+  cin>>n>>W;
+  for(int i=0; i<n; i++) {
+    int a ;
+    cin>>a;
+    v.PB(a);
+  }
+  int ans = solve(0, W);
   cout<<ans<<endl;
   return 0;
 }

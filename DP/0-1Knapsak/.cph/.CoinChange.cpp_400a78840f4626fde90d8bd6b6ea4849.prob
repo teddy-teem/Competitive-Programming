@@ -1,0 +1,1 @@
+{"name":"Local: CoinChange","url":"/workspaces/Competitive-Programming/DP/0-1Knapsak/CoinChange.cpp","tests":[{"id":1669272043679,"input":"5 15\n-2 5 9 13 15","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/Competitive-Programming/DP/0-1Knapsak/CoinChange.cpp","group":"local","local":true}

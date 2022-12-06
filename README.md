@@ -6,7 +6,7 @@
       * LCS
       * LIC
       * Shortest path
-2. [Mathematics](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Mathmetics.md)
+2. [Mathematics](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md)
      - Basic Math
      - Factorial
      - Addition

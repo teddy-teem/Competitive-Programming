@@ -13,7 +13,7 @@
      - Division
      - Multiplication
      
-3. Number Theory
+3. [Number Theory](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md)
      - GCD
      - Prime Numbers
 4. Recusrsive

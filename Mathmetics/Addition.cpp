@@ -28,8 +28,27 @@ typedef pair<string,string> pss;
 typedef pair<string,int> psi;
 typedef map<int,int> mii;
 
-int main() {
-  IOS;
-  cout<<"Hello World";
-  return 0;
+string add(string s, string t){
+    int cr=0,j;
+    string ans;
+    vector<int> v,w,x;
+    STRING_TO_INT(v,s);
+    STRING_TO_INT(w,t);
+    if(v.size()<w.size()) swap(v,w);
+    j=w.size()-1;
+    for(int i=v.size()-1; i>=0; i--){
+        if(j!=-1)
+            cr+=v[i]+w[j--];
+        else
+            cr+=v[i];
+        x.PB(cr%10);
+        cr/=10;
+    }
+    if(cr!=0) x.PB(cr);
+    INT_TO_STRING(ans,x);
+    reverse(ans.begin(), ans.end());
+    return ans;
+}
+int main(){
+    cout<<add("11", "9")<<endl;
 }

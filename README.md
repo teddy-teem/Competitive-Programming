@@ -6,10 +6,13 @@
       * LCS
       * LIC
       * Shortest path
-2. Mathematics
-     - Large Number Addition
-     - Large Number Division
-     - Large Number Multiplication
+2. [Mathematics](https://github.com/teddy-teem/Competitive-Programming/blob/Mathematics/Mathmetics/Mathmetics.md)
+     - Basic Math
+     - Factorial
+     - Addition
+     - Division
+     - Multiplication
+     
 3. Number Theory
      - GCD
      - Prime Numbers

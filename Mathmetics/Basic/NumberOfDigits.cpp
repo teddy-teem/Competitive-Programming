@@ -28,6 +28,8 @@ typedef map<int,int> mii;
 
 int main() {
   IOS;
-  cout<<"Hello World";
+  int n;
+  cin>>n;
+  cout<<(floor(log10(n))+1)<<endl;
   return 0;
 }

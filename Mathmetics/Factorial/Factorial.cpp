@@ -26,8 +26,15 @@ typedef pair<string,string> pss;
 typedef pair<string,int> psi;
 typedef map<int,int> mii;
 
+int fact(int n) {
+    if(n==1) return 1;
+    return n*fact(n-1);
+}
+
 int main() {
   IOS;
-  cout<<"Hello World";
+  int n;
+  cin>>n;
+  cout<<fact(n)<<endl;
   return 0;
 }

@@ -1,6 +1,6 @@
 # Competitive-Programming
 ## Table of contents
-1.  Dynamic Programming 
+1.  [Dynamic Programming](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md)
       * 0/1 Knapsack
       * Fibonacchi
       * LCS

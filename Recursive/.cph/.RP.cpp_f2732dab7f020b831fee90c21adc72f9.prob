@@ -1,0 +1,1 @@
+{"name":"Local: RP","url":"/workspaces/Competitive-Programming/Recursive/RP.cpp","tests":[{"id":1669875014118,"input":"6\n1 54 88 6 55 7","output":"Before: 1 54 88 6 55 7 \nAfter: 54 88 6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/Competitive-Programming/Recursive/RP.cpp","group":"local","local":true}

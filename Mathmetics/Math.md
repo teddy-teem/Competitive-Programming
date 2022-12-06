@@ -1,7 +1,8 @@
 # Mathematics
 ## Table of contents
 
- 1. Basic
+<a name="math--basic"></a><a name="1.1"></a>
+ 1. [Basic](#math--basic)
       - [Number of digit in a number](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Basic/NumberOfDigits.cpp) $=⌊\log(n)⌋+1$ </P>
  2. Factorial
        - [Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Factorial/Factorial.cpp) $n! = n* (n-1)!$

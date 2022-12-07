@@ -13,6 +13,7 @@
 #define BIT_NO_OF_TRAILING_0(a) (__builtin_ctz(a))
 #define STRING_TO_INT(v,s) for(int i=0; i<s.size(); i++) v.PB(s[i]-'0');
 #define INT_TO_STRING(a,x) for(int i=0; i<x.size(); i++) a+=x[i]+'0';
+#define GCD(m,n)  __gcd(m,n)
 
 using namespace std; 
 
@@ -29,5 +30,6 @@ typedef map<int,int> mii;
 int main() {
   IOS;
   cout<<"Hello World";
+  cout<<(GCD(12,56));
   return 0;
 }

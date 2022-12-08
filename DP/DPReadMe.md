@@ -32,3 +32,7 @@
  4. [LCS (Longest Common Subsequence)]()
  5. [LIS (Longest Increasing Subsequence)]()
  6. [Shortest Path in DAG]()
+ 7. [nCr]()
+     ```math
+     (n−1)Cr+(n−1)C(r−1)
+     ```

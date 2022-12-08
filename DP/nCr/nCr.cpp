@@ -8,9 +8,12 @@
 #define REP(i,a,b)   for(int i=a; i<=b; i++)
 #define I_REP(i,a,b)   for(int i=a; i>=b; i--)
 #define ISEVEN(a) (a&1?0:1)
-#define BIT_NO_OF_1(a) (__builtin_popcount(a)) //Number of one's in Binary
+#define BIT_NO_OF_1(a) (__builtin_popcount(a))
 #define BIT_NO_OF_LEADING_0(a) (__builtin_clz(a))
 #define BIT_NO_OF_TRAILING_0(a) (__builtin_ctz(a))
+#define STRING_TO_INT(v,s) for(int i=0; i<s.size(); i++) v.PB(s[i]-'0');
+#define INT_TO_STRING(a,x) for(int i=0; i<x.size(); i++) a+=x[i]+'0';
+#define GCD(m,n)  __gcd(m,n)
 
 using namespace std; 
 
@@ -24,23 +27,21 @@ typedef pair<string,string> pss;
 typedef pair<string,int> psi;
 typedef map<int,int> mii;
 
-vi mem(1000, -1);
+vector<vector<ull>> mem(1000, vector<ull>(1000,-1));
 
-int toOne(int n) {
-  if(n==1) return 0;
-  if(mem[n]!=-1) return mem[n];
-  int r = 1+toOne(n-1);
-  if(n%2==0) r = min(r, 1+toOne(n/2));
-  if(n%3==0) r = min(r, 1+toOne(n/3));
-  mem[n]=r;
-  return mem[n];
+ull nCr (int n, int r) {
+    if(n==r) return 1;
+    if(r==1) return n;
+    if(mem[n][r]!=-1) return mem[n][r];
+    ull ans = nCr(n-1,r) + nCr(n-1, r-1);
+    mem[n][r] = ans;
+    return ans;
 }
 
 int main() {
   IOS;
-  int n;
-  cin>>n;
-  cout<<toOne(n)<<endl;
-
+  int n,r;
+  cin>>n>>r;
+  cout<<(nCr(n,r));
   return 0;
 }

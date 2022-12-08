@@ -38,6 +38,7 @@ void printV(vi vec, int n = -1)
     }
     cout << endl;
 }
+
 int findLis(int i) {
     if(mem[i]!=-1) return mem[i];
     int ans=0;

@@ -8,9 +8,12 @@
 #define REP(i,a,b)   for(int i=a; i<=b; i++)
 #define I_REP(i,a,b)   for(int i=a; i>=b; i--)
 #define ISEVEN(a) (a&1?0:1)
-#define BIT_NO_OF_1(a) (__builtin_popcount(a)) //Number of one's in Binary
+#define BIT_NO_OF_1(a) (__builtin_popcount(a))
 #define BIT_NO_OF_LEADING_0(a) (__builtin_clz(a))
 #define BIT_NO_OF_TRAILING_0(a) (__builtin_ctz(a))
+#define STRING_TO_INT(v,s) for(int i=0; i<s.size(); i++) v.PB(s[i]-'0');
+#define INT_TO_STRING(a,x) for(int i=0; i<x.size(); i++) a+=x[i]+'0';
+#define GCD(m,n)  __gcd(m,n)
 
 using namespace std; 
 
@@ -24,23 +27,29 @@ typedef pair<string,string> pss;
 typedef pair<string,int> psi;
 typedef map<int,int> mii;
 
-vi mem(1000, -1);
 
-int toOne(int n) {
-  if(n==1) return 0;
-  if(mem[n]!=-1) return mem[n];
-  int r = 1+toOne(n-1);
-  if(n%2==0) r = min(r, 1+toOne(n/2));
-  if(n%3==0) r = min(r, 1+toOne(n/3));
-  mem[n]=r;
-  return mem[n];
+///////////PENDING................
+
+int CAP, n;
+int Goods[4000], Price[400];
+int knapsak(int i, int W) {
+    if(W>=CAP) return 0;
+    if(i==n) return 0;
+    int ans = Price[i] + knapsak(i+1, W+Goods[i]);
+    ans = max(ans, knapsak(i+1, W));
+    return ans;
 }
 
 int main() {
   IOS;
-  int n;
   cin>>n;
-  cout<<toOne(n)<<endl;
-
+  for(int i=0; i<n; i++) {
+    cin>>Price[i];
+  }
+  for(int i=0; i<n; i++) {
+    cin>>Goods[i];
+  }
+  cin>>CAP;
+  cout<<knapsak(0,0);
   return 0;
 }

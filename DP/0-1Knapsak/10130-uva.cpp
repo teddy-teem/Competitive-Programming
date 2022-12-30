@@ -34,10 +34,12 @@ typedef pair<string, string> pss;
 typedef pair<string, int> psi;
 typedef map<int, int> mii;
 
+
 vvi mem(1000, vi(1000, -1));
 
 int n, groupSize, CAP;
-int GoodsWeights[1005], Price[1005];
+int Goods[1005], Price[1005];
+
 int knapsak(int i, int W)
 {
 
@@ -46,25 +48,40 @@ int knapsak(int i, int W)
   if (mem[i][W] != -1)
     return mem[i][W];
   int ans = 0;
-  if (W + GoodsWeights[i] <= CAP)
+  if (W + Goods[i] <= CAP)
   {
-    ans = Price[i] + knapsak(i + 1, W + GoodsWeights[i]);
+    ans = Price[i] + knapsak(i + 1, W + Goods[i]);
   }
   ans = max(ans, knapsak(i + 1, W));
   mem[i][W] = ans;
   return ans;
 }
 
-int main() {
-  IOS;
-  cin>>n;
-  for(int i=0; i<n; i++) {
-    cin>>Price[i];
-  }
-  for(int i=0; i<n; i++) {
-    cin>>GoodsWeights[i];
-  }
-  cin>>CAP;
-  cout<<knapsak(0,0);
-  return 0;
+int main()
+{
+    IOS;
+    int tc;
+    cin >> tc;
+    while (tc--)
+    {
+        cin >> n;
+        for (int i = 0; i < n; i++)
+        {
+            int a, b;
+            cin >> a >> b;
+            Price[i]=a;
+            Goods[i]=b;
+        }
+        cin >> groupSize;
+        ll ans = 0;
+        for (int i = 0; i < groupSize; i++)
+        {
+            cin >> CAP;
+            ans +=  (ll) knapsak(0, 0);
+            fill(mem.begin(), mem.end(), vector<int>(1005, -1));
+        }
+        cout<<ans<<endl;
+    }
+
+    return 0;
 }

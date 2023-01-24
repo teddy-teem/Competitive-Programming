@@ -1,5 +1,5 @@
 # Dynamic Programming
- ## Basic Problems
+ ## [Basic Problems](https://github.com/teddy-teem/Competitive-Programming/tree/master/DP/BasicProblem)
  > ###### ***[Minimum Steps to One](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/BasicProblem/MinimumStepsToOne.cpp)***
  > **Problem Statement:** Problem Statement: On a positive integer, you can perform any one of the following 3 steps.
  > 1. Subtract 1 from it. ( n = n - 1 ) , 
@@ -26,17 +26,17 @@
   >           
   > ```       
 
- ## 0/1 Knapsack
+ ## [0/1 Knapsack](https://github.com/teddy-teem/Competitive-Programming/tree/master/DP/0-1Knapsak)
  > ###### [Coin Change](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/0-1Knapsak/CoinChange.cpp)
  > 
       
- ## Fibonacchi
+ ## [Fibonacchi](https://github.com/teddy-teem/Competitive-Programming/tree/master/DP/Fibonacchi)
  > ###### ***[Top Down]()***
  > ###### ***[Bottom up]()***
- ## [LCS (Longest Common Subsequence)]()
- ## [LIS (Longest Increasing Subsequence)]()
- ## [Shortest Path in DAG]()
- ## [nCr]()
+ ## [LCS (Longest Common Subsequence)](https://github.com/teddy-teem/Competitive-Programming/tree/master/DP/LCS)
+ ## [LIS (Longest Increasing Subsequence)](https://github.com/teddy-teem/Competitive-Programming/tree/master/DP/LIS)
+ ## [Shortest Path in DAG](https://github.com/teddy-teem/Competitive-Programming/tree/master/DP/shortestPath)
+ ## [nCr](https://github.com/teddy-teem/Competitive-Programming/tree/master/DP/nCr)
  >    ```math
  >    (n−1)Cr+(n−1)C(r−1)
  >    ```

@@ -31,20 +31,20 @@ vector<vector<ll>> mem(10, vector<ll>(7500, -1));
 
 ll Max = 7489;
 ll makeValue;
-ll coins[5] = {50, 25, 10, 5, 1};
+ll coins[3] = {1,2,5};
 
 ll coinChange(int i, ll amount)
 {
-  if (i >= 5)
+  if (i >= 3)
   {
-    return amount == makeValue ? 1 : 0;
+    return amount == 0 ? 1 : 0;
   }
   if (mem[i][amount] != -1)
     return mem[i][amount];
   int res1 = 0, res2 = 0;
-  if (amount + coins[i] <= makeValue)
+  if (amount - coins[i] >= 0)
   {
-    res1 = coinChange(i, amount + coins[i]);
+    res1 = coinChange(i, amount - coins[i]);
   }
   res2 = coinChange(i + 1, amount);
   mem[i][amount] = res1 + res2;
@@ -54,11 +54,9 @@ ll coinChange(int i, ll amount)
 int main()
 {
   IOS;
-  
   while (cin >> makeValue)
   {
-    cout << coinChange(0, 0) << endl;
-    fill(mem.begin(), mem.end(), vector<ll>(7500, -1));
+    cout << coinChange(0, makeValue) << endl;
   }
   return 0;
 }

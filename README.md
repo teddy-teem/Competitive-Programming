@@ -1,11 +1,17 @@
 # Competitive-Programming
 ## Table of contents
 1.  [Dynamic Programming](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md)
-      * 0/1 Knapsack
-      * Fibonacchi
-      * LCS
-      * LIC
-      * Shortest path
+      * [Basic Problems](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#basic-problems)
+          - [Minimum Steps One](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#minimum-steps-to-one)
+      * [0/1 Knapsack](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#01-knapsack)
+          - [Coin Change](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#coin-change)
+      * [Fibonacchi](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#fibonacchi)
+          - [Top Down](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#top-down)
+          - [Bottom Up](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#bottom-up)
+      * [LCS](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#lcs-longest-common-subsequence)
+      * [LIC](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#lis-longest-increasing-subsequence)
+      * [Shortest path](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#shortest-path-in-dag)
+      * [nCr](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#ncr)
 2. [Mathematics](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md)
      - [Basic Math](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md/#math--basic)
      - Factorial

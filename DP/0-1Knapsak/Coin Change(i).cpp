@@ -9,6 +9,16 @@
 #define S second
 #define REP(i, a, b) for (int i = a; i <= b; i++)
 #define I_REP(i, a, b) for (int i = a; i >= b; i--)
+#define PRINT_2D(array, row, col) \
+  for (int i = 0; i < row; i++)   \
+  {                               \
+    for (int j = 0; j < col; j++) \
+      cout << array[i][j] << " "; \
+    cout << endl;                 \
+  }
+#define PRINT_ARRAY(arr, size)   \
+  for (int i = 0; i < size; i++) \
+    cout << arr[i] << " ";
 #define ISEVEN(a) (a & 1 ? 0 : 1)
 // #define RS(a,n) ((a>>n)&1) //Right bit Shift
 // #define LS(a,n) ((a<<n)&1) //Left bit shift
@@ -27,26 +37,30 @@ typedef pair<int, string> pis;
 typedef pair<string, string> pss;
 typedef pair<string, int> psi;
 typedef map<int, int> mii;
-vector<vector<ll>> mem(10, vector<ll>(7500, -1));
+vector<vector<int>> mem(10, vector<int>(7500, -1));
 
-ll Max = 7489;
-ll makeValue;
-ll coins[5] = {50, 25, 10, 5, 1};
+int Max = 7489;
+int makeValue;
+vi coins, maxUse;
 
-ll coinChange(int i, ll amount)
+int coinChange(int i, int amount)
 {
-  if (i >= 5)
+  if (i >= coins.size())
   {
-    return amount == makeValue ? 1 : 0;
+    return amount == 0 ? 1 : 0;
   }
   if (mem[i][amount] != -1)
     return mem[i][amount];
   int res1 = 0, res2 = 0;
-  if (amount + coins[i] <= makeValue)
+  REP(j, 0, maxUse[i])
   {
-    res1 = coinChange(i, amount + coins[i]);
+    if (amount - coins[i] >= 0)
+    {
+
+      res1 = coinChange(i, amount - coins[i]);
+    }
+    res2 = coinChange(i + 1, amount);
   }
-  res2 = coinChange(i + 1, amount);
   mem[i][amount] = res1 + res2;
   return mem[i][amount];
 }
@@ -54,11 +68,34 @@ ll coinChange(int i, ll amount)
 int main()
 {
   IOS;
-  
-  while (cin >> makeValue)
+  int n;
+  cin >> n;
+  while (n--)
   {
-    cout << coinChange(0, 0) << endl;
-    fill(mem.begin(), mem.end(), vector<ll>(7500, -1));
+    int a, value;
+    vi tmp;
+    cin >> a >> value;
+    REP(i, 0, 2*a)
+    {
+      int b;
+      cin >> b;
+      tmp.PB(b);
+    }
+    REP(i, 0, a)
+    {
+      coins.PB(tmp[i]);
+    }
+    REP(i, a, 2*a)
+    {
+      maxUse.PB(tmp[i]);
+    }
+    cout << coinChange(0, value)<< endl;
+    // PRINT_ARRAY(maxUse, a);
+    // PRINT_ARRAY(coins, a);
+  //  PRINT_2D(mem, 5, 5);
+    fill(mem.begin(), mem.end(), vector<int>(1005, -1));
+    coins.clear();
+    maxUse.clear();
   }
   return 0;
 }

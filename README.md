@@ -13,11 +13,15 @@
       * [Shortest path](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#shortest-path-in-dag)
       * [nCr](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#ncr)
 2. [Mathematics](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md)
-     - [Basic Math](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md/#math--basic)
-     - Factorial
-     - Addition
-     - Division
-     - Multiplication
+     - [Basic Math](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#basic)
+          + [Number of digit in a number](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#number-of-digit-in-a-number)
+     - [Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#factorial)
+          + [Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#factorial-1)
+          + [Number of digit in n!](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#number-of-digit-in-n-number)
+          + [Factorize of Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#factorize-of-factorial)
+     - [Large Number Addition](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-addition)
+     - [Large Number Division](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-division)
+     - [Large Number Multiplication](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-multiplication)
      
 3. [Number Theory](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md)
      - GCD

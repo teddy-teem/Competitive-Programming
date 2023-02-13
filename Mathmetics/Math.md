@@ -6,7 +6,13 @@
  > > $$5 6 7 5$$
  ## [Basic](https://github.com/teddy-teem/Competitive-Programming/tree/master/Mathmetics/Basic)
  >  > ###### [Number of digit in a number](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Basic/NumberOfDigits.cpp) 
- >  > $= ⌊ \log( n ) ⌋ + 1$
+ >  > $$= ⌊ \log( n ) ⌋ + 1$$
+ >  > Where log  is the base of number system </br>
+ >  > let's calculate the number of digit of 15 in 2 base 
+ >  > ```math
+ >  > =⌊log2(15)⌋ + 1 = 4
+ >  > ```
+ >  > Hence we know 15 in base 2 is 1111 which has 4 digits
  >  
  ## [Factorial](https://github.com/teddy-teem/Competitive-Programming/tree/master/Mathmetics/Factorial)
 >   > ###### [Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Factorial/Factorial.cpp) 

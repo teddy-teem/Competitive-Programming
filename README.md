@@ -12,23 +12,36 @@
       * [LIC](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#lis-longest-increasing-subsequence)
       * [Shortest path](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#shortest-path-in-dag)
       * [nCr](https://github.com/teddy-teem/Competitive-Programming/blob/master/DP/DPReadMe.md#ncr)
+      
+      
+      
 2. [Mathematics](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md)
+     - [Addition](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-addition)
      - [Basic Math](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#basic)
           + [Number of digit in a number](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#number-of-digit-in-a-number)
+     - [Division](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-division)
      - [Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#factorial)
           + [Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#factorial-1)
           + [Number of digit in n!](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#number-of-digit-in-n-number)
           + [Factorize of Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#factorize-of-factorial)
-     - [Large Number Addition](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-addition)
-     - [Large Number Division](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-division)
-     - [Large Number Multiplication](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-multiplication)
+     - [Multiplication](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-multiplication)
+     - Permutation
+     - Subset
+     - Subtraction
      
 3. [Number Theory](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md)
+     - Euclidean
      - GCD
+     - Mod
+     - Prime Factorization
      - Prime Numbers
-4. Recusrsive
+4. [Recusrsive](https://github.com/teddy-teem/Competitive-Programming/blob/master/Recursive/Recursive.md#recursive)
      - Random Problem 1
      - Random Problem 2
+5. [Graph](https://github.com/teddy-teem/Competitive-Programming/blob/master/Graph/Graph.md#graph)
+     - BFS
+     - DFS
+     - Topological Sort
      
 <details><summary>Basic Tamplate</summary>
 <p>

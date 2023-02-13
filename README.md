@@ -35,10 +35,10 @@
      - Mod
      - Prime Factorization
      - Prime Numbers
-4. Recusrsive
+4. [Recusrsive](https://github.com/teddy-teem/Competitive-Programming/blob/master/Recursive/Recursive.md#recursive)
      - Random Problem 1
      - Random Problem 2
-5. Graph
+5. [Graph](https://github.com/teddy-teem/Competitive-Programming/blob/master/Graph/Graph.md#graph)
      - BFS
      - DFS
      - Topological Sort

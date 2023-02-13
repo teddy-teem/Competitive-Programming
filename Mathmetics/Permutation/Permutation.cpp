@@ -35,9 +35,15 @@ typedef pair<string, int> psi;
 typedef map<int, int> mii;
 
 void permute(vi a, int l, int r){
+cout<<"Left -> Right"<<l<<"->"<<r<<endl;
+cout<<"Array"<<endl;
+for(int i=0; i<3; i++) {
+    cout<<a[i]<<" ";
+}
+cout<<endl;
 if(l==r){
     for(auto i:a)
-        cout<<i;
+        // cout<<i;
     cout<<endl;
 }
 else{
@@ -54,7 +60,7 @@ int main()
     v.push_back(1);
     v.push_back(2);
     v.push_back(3);
-    v.push_back(4);
+    // v.push_back(4);
     permute(v,0,v.size()-1);
     return 0;
 }

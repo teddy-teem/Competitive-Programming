@@ -13,7 +13,7 @@
  >  > =⌊log2(15)⌋ + 1 = 4
  >  > ```
  >  > Hence we know 15 in base 2 is 1111 which has 4 digits
- >  
+ ## [Division]()
  ## [Factorial](https://github.com/teddy-teem/Competitive-Programming/tree/master/Mathmetics/Factorial)
 >   > ###### [Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Factorial/Factorial.cpp) 
 >  > $n! = n* (n-1)!$
@@ -25,5 +25,7 @@
 >  > $10! = 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10$  , $\text{ Hence    }4 = 2 * 2, 6 = 2 * 3 \text{, } 8 = 2 * 2 * 2 \text{, }4 9 = 3 * 3 \text{, } 10 = 5 * 2$    
 >  > $10! = 1 * 2 * 3 * ( 2 * 2 ) * 5 * ( 2 * 3 ) * 7 * ( 2 * 2 * 2 ) * (3 * 3) * (2 * 5)$ <br>
 >  > $10! = 2^8 * 3^4 * 5^2 * 7$
- ## [Division]()
  ## [Multiplication]()
+ ## Permutation
+ ## Subset
+ ## Subtraction

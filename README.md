@@ -25,7 +25,8 @@
           + [Number of digit in n!](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#number-of-digit-in-n-number)
           + [Factorize of Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#factorize-of-factorial)
      - [Multiplication](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#large-number-multiplication)
-     - Permutation
+     - [Permutation](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#permutation)
+          + [permutation Algorithm](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Math.md#permutationcode)
      - Subset
      - Subtraction
      

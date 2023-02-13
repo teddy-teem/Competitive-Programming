@@ -16,6 +16,7 @@
  >  > ```
  >  > Hence we know 15 in base 2 is 1111 which has 4 digits
  ## [Division]()
+ > 
  ## [Factorial](https://github.com/teddy-teem/Competitive-Programming/tree/master/Mathmetics/Factorial)
 >   > ###### [Factorial](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Factorial/Factorial.cpp) 
 >  > $n! = n* (n-1)!$
@@ -29,5 +30,12 @@
 >  > $10! = 2^8 * 3^4 * 5^2 * 7$
  ## [Multiplication]()
  ## Permutation
+ > Algorithm
+ >  - check left == right ?
+ >     - True; Print the array
+ >     - False; loop(left to right){ </br>
+ >             swap(a[i] to a[l]; </br>
+ >             call the function recursively;</br>
+ >      }
  ## Subset
  ## Subtraction

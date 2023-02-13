@@ -1,5 +1,7 @@
 # Mathematics
  ## [Addition]()
+ > ###### Addition for Large Number , converted in string first
+ > The technique of addition we have used here that what we have learned in primary school. Example Bellow.
  >  $$5 4 3 2$$
  >  $$+ 2 4 3$$
  >  $=-----------------------------$

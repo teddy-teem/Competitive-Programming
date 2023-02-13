@@ -29,13 +29,15 @@
 >  > $10! = 1 * 2 * 3 * ( 2 * 2 ) * 5 * ( 2 * 3 ) * 7 * ( 2 * 2 * 2 ) * (3 * 3) * (2 * 5)$ <br>
 >  > $10! = 2^8 * 3^4 * 5^2 * 7$
  ## [Multiplication]()
- ## Permutation
+ ## [Permutation](https://github.com/teddy-teem/Competitive-Programming/tree/master/Mathmetics/Permutation)
+ > ###### [PermutationCode](https://github.com/teddy-teem/Competitive-Programming/blob/master/Mathmetics/Permutation/Permutation.cpp)
  > Algorithm
  >  - check left == right ?
  >     - True; Print the array
  >     - False; loop(left to right){ </br>
- >             swap(a[i] to a[l]; </br>
- >             call the function recursively;</br>
- >      }
+ >       &emsp; swap(a[i] to a[l]; </br>
+ >       &emsp;  call the function recursively;</br>
+ >      }</br>
+ >      ![Permutation Image](./Diagrams/permutation.gif)
  ## Subset
  ## Subtraction

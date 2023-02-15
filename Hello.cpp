@@ -20,6 +20,7 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef vector<int> vi;
+typedef vector<vi> vec2d;
 typedef vector<string> vs;
 typedef pair<int,int> pii;
 typedef pair<int,string> pis;

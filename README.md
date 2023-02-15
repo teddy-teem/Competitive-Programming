@@ -31,11 +31,19 @@
      - Subtraction
      
 3. [Number Theory](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md)
-     - Euclidean
-     - GCD
-     - Mod
-     - Prime Factorization
-     - Prime Numbers
+     - [Euclidean](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#euclidean)
+          + [Extended Euclidean](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#euclidean-1)
+     - [GCD](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#gcd)
+          + [Euclidean](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#euclidean-1)
+     - [Mod](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#mod)
+          + [Big Number's Mod](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#big-numbers-mod)
+     - [Prime Factorization](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#prime-factorization)
+          + [Prime Factorization](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#prime-factorization-1)
+     - [Prime Numbers](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#prime-numbers)
+          + [Check Prime (Fermet's law)](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#check-prime-fermets-law)
+          + [Normal Sieve](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#normal-sieve)
+          + [Bitwise Sieve](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#bitwise-sieve)
+          + [Segment Sieve](https://github.com/teddy-teem/Competitive-Programming/blob/master/NumberTheory/NumberTheory.md#segment-sieve)
 4. [Recusrsive](https://github.com/teddy-teem/Competitive-Programming/blob/master/Recursive/Recursive.md#recursive)
      - Random Problem 1
      - Random Problem 2

@@ -40,7 +40,6 @@ int CAP, n;
 int Goods[4000], Price[4000];
 int knapsak(int i, int W)
 {
-
   if (i == n)
     return 0;
   if (mem[i][W] != -1)

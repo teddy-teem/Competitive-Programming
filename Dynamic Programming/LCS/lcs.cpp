@@ -27,7 +27,7 @@ typedef pair<string,int> psi;
 typedef map<int,int> mii;
 
 string s1, s2;
-vector<vi> mem(100, vi(100, -1));
+vector<vi> mem(3000, vi(3000, -1));
 
 int LCS (int i=0, int j=0) {
     if(i==s1.size() || j==s2.size()) return 0;

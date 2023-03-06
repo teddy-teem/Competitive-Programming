@@ -42,6 +42,8 @@ typedef pair<int, string> pis;
 typedef pair<string, string> pss;
 typedef pair<string, int> psi;
 typedef map<int, int> mii;
+typedef hash<string> stringHash; 
+
 
 vi d;
 

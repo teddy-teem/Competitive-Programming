@@ -5,7 +5,6 @@ int w[100][100];
 int mem[10000];
 int n, c=0;
 int solve(int u) {
-    c++;
     if (u==n-1) return 0;
     if(mem[u]!=-1) return mem[u];
     int ans=INF;

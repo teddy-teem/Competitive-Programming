@@ -44,28 +44,22 @@ typedef pair<string, int> psi;
 typedef map<int, int> mii;
 typedef hash<string> stringHash;
 
-int searchInRotatedArray(vi & nums, int X) {
-    int left = 0, right=nums.size();
-    while(left<right) {
-        int mid = left + (right - left)/2;
-        if(nums[mid]==X) return mid;
-
-        if(nums[left]<=nums[mid]) { // `left` to `mid` is sorted
-            if(nums[left]<=X && X<nums[mid]) {
-                
-            }
-        }
-
-    }
-    return -1;
-
-}
-
 int main()
 {
   IOS;
-  vector<int> v = {1,2,2,2,3,6,9,8, 0,-1,-6,-8,-9};
-  cout<<"Index: "<<searchInRotatedArray(v, 2)<<endl;
-  
+
+  int n, i = 1;
+  cin >> n;
+  vector<pair<double, int>> v(n);
+  while (n--)
+  {
+    double x, y;
+    cin >> x >> y;
+    v[i-1] = {(double)x/(x+y),-(i)};
+    i++;
+  }
+  sort(v.rbegin(), v.rend());
+  for (auto m : v)
+    cout << -m.second << " ";
   return 0;
 }

@@ -4,6 +4,7 @@
 #define IOS                           \
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL)
+
 #define ISEVEN(a) (a & 1 ? 0 : 1)
 #define BIT_NO_OF_1(a) (__builtin_popcount(a))
 #define BIT_NO_OF_LEADING_0(a) (__builtin_clz(a))
@@ -28,31 +29,42 @@ typedef pair<string, string> pss;
 typedef pair<string, int> psi;
 typedef map<int, int> mii;
 
-int visited[10000];
 
-void dfs(int root, vector<vi>& v){
-    visited[root]=1;
-    cout<<root<<" ";
-    for(auto i:v[root]){
-            if(visited[i]==0)
-            {
-                dfs(i, v);
-            }
+struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+};
+
+
+void bfs(TreeNode* root)
+{
+    queue<TreeNode*> q;
+    q.push(root);
+    while (!q.empty()) {
+        TreeNode* front = q.front();
+        cout<<front->val<<" ";
+        q.pop();
+
+        if(front->left != NULL) {
+            q.push(front->left);
+        }
+        if(front->right != NULL) {
+            q.push(front->right);
+        }
     }
 }
 
 int main()
 {
     IOS;
-    int node, edge;
-    cin>>node>>edge;
-    vector<vi> v(node+1); //Alway take 1 extra size else will get runtime error: 
-    for(int i=0; i<edge; i++) {
-        int a, b;
-        cin>>a>>b;
-        v[a].push_back(b);
-    }
-    
-    dfs(1, v);
+    TreeNode* root = new TreeNode(1);
+    root->left = new TreeNode(2);
+    root->right = new TreeNode(3);
+    root->left->left = new TreeNode(4);
+    root->left->right = new TreeNode(5);
+    bfs(root);
     return 0;
 }

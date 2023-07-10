@@ -10,8 +10,8 @@
 #define REP(i, a, b) for (int i = a; i <= b; i++)
 #define I_REP(i, a, b) for (int i = a; i >= b; i--)
 #define ISEVEN(a) (a & 1 ? 0 : 1)
-#define PRINT_2D(r, c, v) \
-  for(int i = 0; i < r; i++)    \
+#define PRINT_2D(r, c, v)       \
+  for (int i = 0; i < r; i++)   \
   {                             \
     for (int j = 0; j < c; j++) \
       cout << v[i][j] << " ";   \
@@ -27,8 +27,8 @@
   for (int i = 0; i < x.size(); i++) \
     a += x[i] + '0';
 #define GCD(m, n) __gcd(m, n)
-#define INIT_2D_VEC(r,c,v, vec) vec2d vec(r, vi(c, v));
-#define INIT_VEC(n,v, vec) vi vec(n ,v);
+#define INIT_2D_VEC(r, c, v, vec) vec2d vec(r, vi(c, v));
+#define INIT_VEC(n, v, vec) vi vec(n, v);
 
 using namespace std;
 
@@ -42,18 +42,39 @@ typedef pair<int, string> pis;
 typedef pair<string, string> pss;
 typedef pair<string, int> psi;
 typedef map<int, int> mii;
-typedef hash<string> stringHash; 
-
-
-vi d;
+typedef hash<string> stringHash;
 
 int main()
 {
   IOS;
-  INIT_VEC(100, -1, d);
-  REP(i, 0, 10) {
-    cout<<d[i]<<" ";
+
+  int n, d;
+  cin >> n >> d;
+  vi x(n), y(n), inf(n);
+  for (int i = 0; i < n; i++)
+  {
+    cin >> x[i] >> y[i];
+    inf[i] = 0;
   }
-  // PRINT_2D(3,3,v);
+  inf[0] = 1;
+  for (int i = 0; i < n; i++)
+  {
+    for (int j = 1; j < n; j++)
+    {
+      if (i != j && inf[i])
+      {
+        int Distance = (((x[i] - x[j]) * (x[i] - x[j])) + ((y[i] - y[j]) * (y[i] - y[j])));
+        if (d * d >= abs(Distance))
+        {
+          cout << abs(Distance) << " " << d * d <<"  ->"<<j<<endl;
+          inf[j] = 1;
+          break;
+        }
+      };
+    }
+  }
+  for(auto i: inf) {
+    i==1 ? cout<<"Yes\n":cout<<"No\n";
+  }
   return 0;
 }

@@ -29,30 +29,42 @@ typedef pair<string, int> psi;
 typedef map<int, int> mii;
 
 int visited[10000];
-
-void dfs(int root, vector<vi>& v){
-    visited[root]=1;
+vi path;
+vector<vi> ans;
+int destination;
+void dfs(int root,  vector<vi>& v){
+    // visited[root]=1;
     cout<<root<<" ";
-    for(auto i:v[root]){
-            if(visited[i]==0)
-            {
-                dfs(i, v);
-            }
+    path.push_back(root);
+    if(root==destination) {
+        ans.push_back(path);
     }
+    for(auto i:v[root]){
+        // if(visited[i]==0)    ////It's DAG, so no cycle, so no need to check visited or not. :-)
+        // {
+            dfs(i, v);
+        // }
+    }
+    path.pop_back();
 }
 
 int main()
 {
     IOS;
-    int node, edge;
-    cin>>node>>edge;
-    vector<vi> v(node+1); //Alway take 1 extra size else will get runtime error: 
+    int node, edge, source;
+    cin>>node>>edge>>source>>destination;
+    vector<vi> v(node+1); //Always take 1 extra size else will get runtime error: 
     for(int i=0; i<edge; i++) {
         int a, b;
         cin>>a>>b;
         v[a].push_back(b);
     }
     
-    dfs(1, v);
+    dfs(source, v);
+    cout<<endl;
+    for(vi a:ans){
+        for(int i:a) cout<<i<<" ";
+        cout<<endl;
+    }
     return 0;
 }

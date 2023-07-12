@@ -51,6 +51,7 @@
      - BFS
      - DFS
      - Topological Sort
+     - Trie
 6. [String]()
      
 <details><summary>Basic Tamplate</summary>
